@@ -15,9 +15,6 @@ bot.once('ready',() => {
     console.log('Ready!');
 });
 
-
-// Whenever a message is sent inside a channel bot has access to,
-// the message content will be logged to console
 bot.on('message', message => {
     // If the message either doesn't start with the prefix or was sent by a bot, exit
     if(!message.content.startsWith(prefix) || message.author.bot) return;
